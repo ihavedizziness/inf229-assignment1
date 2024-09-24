@@ -8,7 +8,7 @@ import androidx.compose.runtime.compositionLocalOf
 
 interface AbstractText
 
-interface StringKey: Parcelable
+interface StringKey : Parcelable
 
 data class NonTranslatableText(
     val text: String,

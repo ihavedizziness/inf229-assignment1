@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 enum class ProjectString : StringKey {
+    NoneString,
     FirstScreenTitle,
     SwitchLabel,
     LoginLabel,
@@ -15,5 +16,19 @@ enum class ProjectString : StringKey {
     Salary,
     Applied,
     ExpiresSoon,
-    NoneString;
+    CanvaTitle,
+    CanvaCompany,
+    CanvaDate,
+    RolesTitle,
+    RolesSubtitle,
+    ApplyTitle,
+    ApplySubtitle,
+    TypeTitle,
+    TypeSubtitle,
+    SalaryTitle,
+    SalarySubtitle,
+    LocationTitle,
+    LocationSubtitle,
+    JobTitle,
+    JobSubtitle,
 }

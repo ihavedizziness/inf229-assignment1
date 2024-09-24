@@ -45,8 +45,7 @@ fun SecondScreen(
             )
     ) {
         Column(
-            modifier = Modifier
-                .padding(top = 60.dp, start = 16.dp, end = 16.dp),
+            modifier = Modifier.padding(top = 60.dp, start = 16.dp, end = 16.dp),
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -94,7 +93,6 @@ fun SecondScreen(
 private fun SecondScreenPreview() {
     PreviewContainer {
         SecondScreen(
-            modifier = Modifier.fillMaxSize(),
             data = listOf(
                 SecondScreenListDVO(
                     title = "Designer",

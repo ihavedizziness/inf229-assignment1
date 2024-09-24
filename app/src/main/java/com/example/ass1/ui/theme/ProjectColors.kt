@@ -10,6 +10,7 @@ val LocalColors: ProvidableCompositionLocal<ProjectColors> = staticCompositionLo
 
 interface ProjectColors {
     val white: Color
+    val black: Color
     val whiteScreen1: Color
     val backgroundGreen: Color
     val backgroundGreen81: Color
@@ -20,6 +21,7 @@ interface ProjectColors {
     val blackGreyScreen2: Color
     val greenStatus: Color
     val yellowStatus: Color
+    val greenText: Color
 }
 
 data class ProjectLightColors(
@@ -29,11 +31,13 @@ data class ProjectLightColors(
     override val buttonColor: Color = Color(0xFFBFDBD1),
     override val shadowColor: Color = Color(0x40000000),
     override val white: Color = Color(0xFFFFFFFF),
+    override val black: Color = Color(0xFF000000),
     override val blackScreen2: Color = Color(0xFF0D0D0D),
     override val greyScreen2: Color = Color(0xFF434545),
     override val blackGreyScreen2: Color = Color(0xFF53595F),
     override val greenStatus: Color = Color(0xFF07864B),
     override val yellowStatus: Color = Color(0xFFDAA400),
+    override val greenText: Color = Color(0xFF0FAC74),
 ) : ProjectColors
 
 object ProjectUnspecifiedColors : ProjectColors {
@@ -43,9 +47,11 @@ object ProjectUnspecifiedColors : ProjectColors {
     override val buttonColor: Color = Color.Unspecified
     override val shadowColor: Color = Color.Unspecified
     override val white: Color = Color.Unspecified
+    override val black: Color = Color.Unspecified
     override val blackScreen2: Color = Color.Unspecified
     override val greyScreen2: Color = Color.Unspecified
     override val blackGreyScreen2: Color = Color.Unspecified
     override val greenStatus: Color = Color.Unspecified
     override val yellowStatus: Color = Color.Unspecified
+    override val greenText: Color = Color.Unspecified
 }

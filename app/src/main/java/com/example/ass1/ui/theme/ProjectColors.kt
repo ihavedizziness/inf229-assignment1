@@ -1,3 +1,5 @@
+@file:Suppress("MagicNumber")
+
 package com.example.ass1.ui.theme
 
 import androidx.compose.runtime.ProvidableCompositionLocal

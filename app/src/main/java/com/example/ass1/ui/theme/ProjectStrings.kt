@@ -32,7 +32,8 @@ object ProjectStrings {
 
     private fun getInitialLanguageWithMigration(): String = runBlocking {
         return@runBlocking settingsStore?.data?.first()?.get(localeKey).orEmpty().ifBlank {
-            AppCompatDelegate.getApplicationLocales().toLanguageTags().takeIf(String::isNotBlank) ?: Locales.EN.localeTag
+            AppCompatDelegate.getApplicationLocales()
+                .toLanguageTags().takeIf(String::isNotBlank) ?: Locales.EN.localeTag
         }
     }
 }

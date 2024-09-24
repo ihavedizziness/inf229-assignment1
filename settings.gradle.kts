@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "ass1"
 include(":app")
- 

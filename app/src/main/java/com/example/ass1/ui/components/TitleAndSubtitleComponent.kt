@@ -21,6 +21,7 @@ fun TitleAndSubtitleComponent(
     modifier: Modifier = Modifier,
     title: String,
     subtitle: String,
+    isTitleBold: Boolean = false,
     isLabeled: Boolean = false,
 ) {
     Column(
@@ -31,7 +32,7 @@ fun TitleAndSubtitleComponent(
             style = ProjectTheme.typography.title1screen.copy(
                 color = ProjectTheme.colors.greyScreen2,
                 fontSize = 12.sp,
-                fontWeight = FontWeight.Medium,
+                fontWeight = if (isTitleBold) FontWeight.Bold else FontWeight.Medium,
             ),
         )
         if (isLabeled) {

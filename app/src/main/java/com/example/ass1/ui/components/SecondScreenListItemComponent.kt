@@ -28,8 +28,8 @@ import com.example.ass1.ui.theme.stringRes
 
 @Composable
 fun SecondScreenListItemComponent(
-    data: SecondScreenListItemDVO,
     modifier: Modifier = Modifier,
+    data: SecondScreenListItemDVO,
 ) {
     Box(
         modifier = modifier

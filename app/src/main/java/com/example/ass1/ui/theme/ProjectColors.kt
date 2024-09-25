@@ -22,6 +22,8 @@ interface ProjectColors {
     val greenStatus: Color
     val yellowStatus: Color
     val greenText: Color
+    val violet: Color
+    val blueButton: Color
 }
 
 data class ProjectLightColors(
@@ -38,6 +40,8 @@ data class ProjectLightColors(
     override val greenStatus: Color = Color(0xFF07864B),
     override val yellowStatus: Color = Color(0xFFDAA400),
     override val greenText: Color = Color(0xFF0FAC74),
+    override val violet: Color = Color(0xFF4E4B66),
+    override val blueButton: Color = Color(0xFF1877F2),
 ) : ProjectColors
 
 object ProjectUnspecifiedColors : ProjectColors {
@@ -54,4 +58,6 @@ object ProjectUnspecifiedColors : ProjectColors {
     override val greenStatus: Color = Color.Unspecified
     override val yellowStatus: Color = Color.Unspecified
     override val greenText: Color = Color.Unspecified
+    override val violet: Color = Color.Unspecified
+    override val blueButton: Color = Color.Unspecified
 }
